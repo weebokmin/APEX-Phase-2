@@ -59,7 +59,7 @@ nav a:hover { transform:none; font-weight:700; }
 @media(max-width:560px) { .site-header nav { left:50%; right:auto; transform:translateX(-50%); gap:8px; } .site-header nav a { font-size:8px; letter-spacing:.06em; } .brand { font-size:20px; } .race-page .race-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } .calendar-heading p { flex-wrap:wrap; } .globe-placeholder { min-height:400px; grid-template-columns:1fr; align-content:start; gap:20px; } .globe-placeholder h2,.globe-placeholder p { grid-column:1; } .globe-orb { right:-35px; bottom:0; width:210px; height:210px; opacity:.45; } }
 
 .race-page > .globe-placeholder { margin:12px 0 36px; } .race-page .calendar-rail-section { margin-left:-24px; margin-right:-24px; padding-left:24px; padding-right:24px; } }
-@media(max-width:560px) { .race-page .race-rail { grid-template-columns:repeat(2,minmax(0,1fr)); gap:9px; } .race-page .race-rail-card { min-height:250px; } .race-status-legend { gap:12px; } }
+@media(max-width:560px) { .race-page .race-rail { gap:9px; } .race-page .race-rail-card { flex-basis:calc((100% - 9px)/2); min-width:135px; min-height:250px; } .race-status-legend { gap:12px; } }
 
 
 /* Ensure the balanced calendar cards fit the opening view. */
@@ -70,12 +70,15 @@ nav a:hover { transform:none; font-weight:700; }
 .race-status-legend span { display:flex; align-items:center; gap:7px; }
 .completed-dot,.upcoming-dot { display:inline-block; width:7px; height:7px; border-radius:50%; background:var(--green); }
 .upcoming-dot { background:transparent; border:1px solid var(--red); }
-.race-page .race-rail { display:grid; grid-template-columns:repeat(8,minmax(0,1fr)); gap:14px; padding:0; overflow:visible; }
-.race-page .race-rail-card { min-width:0; width:100%; min-height:290px; padding:15px 10px; }
+.race-page .race-rail { display:flex; gap:14px; padding:0 0 14px; overflow-x:auto; overflow-y:hidden; scroll-snap-type:x mandatory; scrollbar-width:thin; scrollbar-color:#777 #242424; }
+.race-page .race-rail::-webkit-scrollbar { display:block; height:8px; }
+.race-page .race-rail::-webkit-scrollbar-track { background:#242424; }
+.race-page .race-rail::-webkit-scrollbar-thumb { background:#777; border-radius:4px; }
+.race-page .race-rail-card { flex:0 0 calc((100% - 98px)/8); min-width:145px; min-height:290px; padding:15px 10px; scroll-snap-align:start; }
 .race-page .race-rail-card .circuit-circle { width:74px; height:74px; }
 .race-page .race-rail-card h3 { min-height:42px; font-size:clamp(14px,1.2vw,19px); }
 .race-page .race-rail-card .meta { font-size:9px; line-height:1.55; }
 .race-page .race-rail-card .status { font-size:8px; }
-@media(max-width:1100px) { .race-page .race-rail { grid-template-columns:repeat(4,minmax(0,1fr)); } }
+@media(max-width:1100px) { .race-page .race-rail-card { flex-basis:calc((100% - 42px)/4); } }
 @media(max-width:800px) { .race-page > .globe-placeholder { margin:12px 0 36px; } .race-page .calendar-rail-section { margin-left:-24px; margin-right:-24px; padding-left:24px; padding-right:24px; } }
 @media(max-width:560px) { .race-page .race-rail { grid-template-columns:repeat(2,minmax(0,1fr)); gap:9px; } .race-page .race-rail-card { min-height:250px; } .race-status-legend { gap:12px; } }
