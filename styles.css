@@ -70,7 +70,7 @@ nav a:hover { transform:none; font-weight:700; }
 .race-status-legend span { display:flex; align-items:center; gap:7px; }
 .completed-dot,.upcoming-dot { display:inline-block; width:7px; height:7px; border-radius:50%; background:var(--green); }
 .upcoming-dot { background:transparent; border:1px solid var(--red); }
-.race-page .race-rail { display:flex; gap:14px; padding:0 0 14px; overflow-x:auto; overflow-y:hidden; scroll-snap-type:x mandatory; scrollbar-width:thin; scrollbar-color:#777 #242424; }
+.race-page .race-rail { display:flex; gap:14px; padding:0 0 14px; overflow-x:auto; overflow-y:hidden; scroll-snap-type:none; scrollbar-width:thin; scrollbar-color:#777 #242424; }
 .race-page .race-rail::-webkit-scrollbar { display:block; height:8px; }
 .race-page .race-rail::-webkit-scrollbar-track { background:#242424; }
 .race-page .race-rail::-webkit-scrollbar-thumb { background:#777; border-radius:4px; }
