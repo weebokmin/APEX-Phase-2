@@ -1,18 +1,18 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-23T00:31:05.908Z",
+  "generatedAt": "2026-09-23T15:08:48.981Z",
   "provenance": [
-    {
-      "sourceId": "jolpica",
-      "retrievedAt": "2026-09-23T00:31:05.908Z",
-      "termsUrl": "https://github.com/jolpica/jolpica-f1/blob/main/TERMS.md",
-      "transform": "Calendar, race classifications, fastest lap and pit-stop duration candidates from https://api.jolpi.ca/ergast/f1; fields without an approved provider remain unavailable."
-    },
     {
       "sourceId": "f1technical",
       "retrievedAt": "2026-09-23T00:00:00Z",
       "termsUrl": "https://www.f1technical.net/pr/terms-and-conditions.php",
       "transform": "One manually reviewed APEX fact-summary based on the linked F1Technical.net report; written independently, attributed, and published without source text or image reuse. No automated feed ingestion."
+    },
+    {
+      "sourceId": "jolpica",
+      "retrievedAt": "2026-09-23T15:08:48.981Z",
+      "termsUrl": "https://github.com/jolpica/jolpica-f1/blob/main/TERMS.md",
+      "transform": "Calendar, race classifications, fastest lap and pit-stop duration candidates from https://api.jolpi.ca/ergast/f1; fields without an approved provider remain unavailable."
     }
   ],
   "stories": [
@@ -24,7 +24,11 @@
       "title": "세 팀의 회전식 리어윙, 구동 구조는 달랐다",
       "summary": "F1Technical.net의 8월 기술 보도는 Ferrari·Red Bull·McLaren의 회전식 리어윙을 비교했다. 보도에 따르면 Ferrari의 상부 플랩은 앞쪽으로 회전하고 구동 장치는 엔드플레이트에 배치됐다. Red Bull과 McLaren은 뒤쪽 회전 방식과 중앙 구동 장치를 사용하며, McLaren은 세 개의 링크를 연결한 기구로 플랩을 움직이는 구조다.",
       "category": "TECHNICAL",
-      "tags": ["McLaren", "Ferrari", "Red Bull Racing"],
+      "tags": [
+        "McLaren",
+        "Ferrari",
+        "Red Bull Racing"
+      ],
       "sources": [
         {
           "sourceId": "f1technical",
