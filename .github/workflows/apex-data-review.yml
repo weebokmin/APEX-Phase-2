@@ -1,0 +1,43 @@
+name: APEX data review
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 */6 * * *'
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  prepare-review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/validate-content.mjs
+      - run: node scripts/check-connections.mjs
+        env:
+          APEX_JOLPICA_NONCOMMERCIAL_CONFIRMED: 'true'
+      - run: node scripts/sync-race-data.mjs
+        env:
+          APEX_JOLPICA_NONCOMMERCIAL_CONFIRMED: 'true'
+          APEX_SEASON: ${{ vars.APEX_SEASON }}
+      - run: node scripts/collect-news.mjs
+      - run: node scripts/review-news.mjs
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          APEX_EDITORIAL_MODEL: ${{ vars.APEX_EDITORIAL_MODEL }}
+      - run: node scripts/validate-content.mjs
+      - run: npm run build
+      - uses: peter-evans/create-pull-request@v7
+        with:
+          commit-message: 'chore(data): prepare APEX editorial review'
+          branch: 'automation/apex-data-review'
+          delete-branch: true
+          title: 'APEX: review scheduled data update'
+          body: |
+            Automated candidate only. Review provenance, source terms, factual accuracy, Korean editorial summary, and visual preview before merging.
+            This workflow never deploys directly to production.
