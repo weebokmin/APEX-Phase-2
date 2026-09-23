@@ -11,16 +11,29 @@ if (!jolpica?.enabled || process.env.APEX_JOLPICA_NONCOMMERCIAL_CONFIRMED !== 't
   console.log('Race sync skipped: Jolpica is disabled or non-commercial confirmation is absent.');
   process.exit(0);
 }
-const minimumRequestIntervalMs = 300;
+// The public Jolpica endpoint may apply short burst limits. Keep calls gentle
+// and respect Retry-After when it asks us to slow down.
+const minimumRequestIntervalMs = 1200;
 let lastRequestStartedAt = 0;
 const wait = milliseconds => new Promise(resolve => setTimeout(resolve, milliseconds));
 const request = async path => {
-  const remainingDelay = minimumRequestIntervalMs - (Date.now() - lastRequestStartedAt);
-  if (remainingDelay > 0) await wait(remainingDelay);
-  lastRequestStartedAt = Date.now();
-  const response = await fetch(`${jolpica.baseUrl}/${path}`, { headers: { accept: 'application/json', 'user-agent': 'APEX-editorial/1.0 contact: repository-owner' } });
-  if (!response.ok) throw new Error(`Jolpica request failed for ${path}: ${response.status}`);
-  return response.json();
+  for (let attempt = 0; attempt < 5; attempt += 1) {
+    const remainingDelay = minimumRequestIntervalMs - (Date.now() - lastRequestStartedAt);
+    if (remainingDelay > 0) await wait(remainingDelay);
+    lastRequestStartedAt = Date.now();
+    const response = await fetch(`${jolpica.baseUrl}/${path}`, { headers: { accept: 'application/json', 'user-agent': 'APEX-editorial/1.0 contact: repository-owner' } });
+    if (response.ok) return response.json();
+
+    const retryable = [429, 500, 502, 503, 504].includes(response.status);
+    if (!retryable || attempt === 4) throw new Error(`Jolpica request failed for ${path}: ${response.status} after ${attempt + 1} attempt(s)`);
+
+    const retryAfter = Number(response.headers.get('retry-after'));
+    const backoffMs = Number.isFinite(retryAfter) && retryAfter > 0
+      ? retryAfter * 1000
+      : Math.min(30000, 3000 * (2 ** attempt));
+    console.warn(`Jolpica returned ${response.status} for ${path}; retrying in ${Math.ceil(backoffMs / 1000)}s (attempt ${attempt + 2}/5).`);
+    await wait(backoffMs);
+  }
 };
 const calendarPayload = await request(`${season}.json`);
 const sourceRaces = calendarPayload?.MRData?.RaceTable?.Races;
