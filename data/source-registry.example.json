@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": "approved-news-source-one",
+      "displayName": "First approved publisher",
+      "kind": "news",
+      "enabled": false,
+      "connector": "rss",
+      "feedUrl": "https://publisher.example/feed.xml",
+      "permittedFields": ["title", "canonicalUrl", "publishedAt", "licensedBrief"],
+      "license": "Replace with the recorded feed licence.",
+      "termsUrl": "https://publisher.example/terms",
+      "activationRequirement": "Enable only after the licence permits automated derivative summaries and publication."
+    },
+    {
+      "id": "approved-news-source-two",
+      "displayName": "Second approved publisher",
+      "kind": "news",
+      "enabled": false,
+      "connector": "rss",
+      "feedUrl": "https://second-publisher.example/feed.xml",
+      "permittedFields": ["title", "canonicalUrl", "publishedAt", "licensedBrief"],
+      "license": "Replace with the recorded feed licence.",
+      "termsUrl": "https://second-publisher.example/terms",
+      "activationRequirement": "Enable only after the licence permits automated derivative summaries and publication."
+    }
+  ]
+}

@@ -1,0 +1,882 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-23T00:31:05.908Z",
+  "provenance": [
+    {
+      "sourceId": "jolpica",
+      "retrievedAt": "2026-09-23T00:31:05.908Z",
+      "termsUrl": "https://github.com/jolpica/jolpica-f1/blob/main/TERMS.md",
+      "transform": "Calendar, race classifications, fastest lap and pit-stop duration candidates from https://api.jolpi.ca/ergast/f1; fields without an approved provider remain unavailable."
+    }
+  ],
+  "stories": [],
+  "calendar": [
+    {
+      "round": 1,
+      "slug": "2026-1-australian-grand-prix",
+      "name": "Australian Grand Prix",
+      "country": "Australia",
+      "date": "2026-03-08",
+      "status": "completed",
+      "sourceId": "jolpica"
+    },
+    {
+      "round": 2,
+      "slug": "2026-2-chinese-grand-prix",
+      "name": "Chinese Grand Prix",
+      "country": "China",
+      "date": "2026-03-15",
+      "status": "completed",
+      "sourceId": "jolpica"
+    },
+    {
+      "round": 3,
+      "slug": "2026-3-japanese-grand-prix",
+      "name": "Japanese Grand Prix",
+      "country": "Japan",
+      "date": "2026-03-29",
+      "status": "completed",
+      "sourceId": "jolpica"
+    },
+    {
+      "round": 4,
+      "slug": "2026-4-miami-grand-prix",
+      "name": "Miami Grand Prix",
+      "country": "USA",
+      "date": "2026-05-03",
+      "status": "completed",
+      "sourceId": "jolpica"
+    },
+    {
+      "round": 5,
+      "slug": "2026-5-canadian-grand-prix",
+      "name": "Canadian Grand Prix",
+      "country": "Canada",
+      "date": "2026-05-24",
+      "status": "completed",
+      "sourceId": "jolpica"
+    },
+    {
+      "round": 6,
+      "slug": "2026-6-monaco-grand-prix",
+      "name": "Monaco Grand Prix",
+      "country": "Monaco",
+      "date": "2026-06-07",
+      "status": "completed",
+      "sourceId": "jolpica"
+    },
+    {
+      "round": 7,
+      "slug": "2026-7-barcelona-grand-prix",
+      "name": "Barcelona Grand Prix",
+      "country": "Spain",
+      "date": "2026-06-14",
+      "status": "completed",
+      "sourceId": "jolpica"
+    },
+    {
+      "round": 8,
+      "slug": "2026-8-austrian-grand-prix",
+      "name": "Austrian Grand Prix",
+      "country": "Austria",
+      "date": "2026-06-28",
+      "status": "completed",
+      "sourceId": "jolpica"
+    },
+    {
+      "round": 9,
+      "slug": "2026-9-british-grand-prix",
+      "name": "British Grand Prix",
+      "country": "UK",
+      "date": "2026-07-05",
+      "status": "completed",
+      "sourceId": "jolpica"
+    },
+    {
+      "round": 10,
+      "slug": "2026-10-belgian-grand-prix",
+      "name": "Belgian Grand Prix",
+      "country": "Belgium",
+      "date": "2026-07-19",
+      "status": "completed",
+      "sourceId": "jolpica"
+    },
+    {
+      "round": 11,
+      "slug": "2026-11-hungarian-grand-prix",
+      "name": "Hungarian Grand Prix",
+      "country": "Hungary",
+      "date": "2026-07-26",
+      "status": "completed",
+      "sourceId": "jolpica"
+    },
+    {
+      "round": 12,
+      "slug": "2026-12-dutch-grand-prix",
+      "name": "Dutch Grand Prix",
+      "country": "Netherlands",
+      "date": "2026-08-23",
+      "status": "completed",
+      "sourceId": "jolpica"
+    },
+    {
+      "round": 13,
+      "slug": "2026-13-italian-grand-prix",
+      "name": "Italian Grand Prix",
+      "country": "Italy",
+      "date": "2026-09-06",
+      "status": "completed",
+      "sourceId": "jolpica"
+    },
+    {
+      "round": 14,
+      "slug": "2026-14-spanish-grand-prix",
+      "name": "Spanish Grand Prix",
+      "country": "Spain",
+      "date": "2026-09-13",
+      "status": "completed",
+      "sourceId": "jolpica"
+    },
+    {
+      "round": 15,
+      "slug": "2026-15-azerbaijan-grand-prix",
+      "name": "Azerbaijan Grand Prix",
+      "country": "Azerbaijan",
+      "date": "2026-09-26",
+      "status": "upcoming",
+      "sourceId": "jolpica"
+    },
+    {
+      "round": 16,
+      "slug": "2026-16-bahrain-grand-prix-in-malaysia",
+      "name": "Bahrain Grand Prix in Malaysia",
+      "country": "Malaysia",
+      "date": "2026-10-04",
+      "status": "upcoming",
+      "sourceId": "jolpica"
+    },
+    {
+      "round": 17,
+      "slug": "2026-17-singapore-grand-prix",
+      "name": "Singapore Grand Prix",
+      "country": "Singapore",
+      "date": "2026-10-11",
+      "status": "upcoming",
+      "sourceId": "jolpica"
+    },
+    {
+      "round": 18,
+      "slug": "2026-18-united-states-grand-prix",
+      "name": "United States Grand Prix",
+      "country": "USA",
+      "date": "2026-10-25",
+      "status": "upcoming",
+      "sourceId": "jolpica"
+    },
+    {
+      "round": 19,
+      "slug": "2026-19-mexico-city-grand-prix",
+      "name": "Mexico City Grand Prix",
+      "country": "Mexico",
+      "date": "2026-11-01",
+      "status": "upcoming",
+      "sourceId": "jolpica"
+    },
+    {
+      "round": 20,
+      "slug": "2026-20-brazilian-grand-prix",
+      "name": "Brazilian Grand Prix",
+      "country": "Brazil",
+      "date": "2026-11-08",
+      "status": "upcoming",
+      "sourceId": "jolpica"
+    },
+    {
+      "round": 21,
+      "slug": "2026-21-las-vegas-grand-prix",
+      "name": "Las Vegas Grand Prix",
+      "country": "USA",
+      "date": "2026-11-22",
+      "status": "upcoming",
+      "sourceId": "jolpica"
+    },
+    {
+      "round": 22,
+      "slug": "2026-22-qatar-grand-prix",
+      "name": "Qatar Grand Prix",
+      "country": "Qatar",
+      "date": "2026-11-29",
+      "status": "upcoming",
+      "sourceId": "jolpica"
+    },
+    {
+      "round": 23,
+      "slug": "2026-23-abu-dhabi-grand-prix",
+      "name": "Abu Dhabi Grand Prix",
+      "country": "UAE",
+      "date": "2026-12-06",
+      "status": "upcoming",
+      "sourceId": "jolpica"
+    }
+  ],
+  "raceDetails": {
+    "2026-1-australian-grand-prix": {
+      "sourceId": "jolpica",
+      "results": [
+        "1|George Russell|Mercedes|1:23:06.801",
+        "2|Andrea Kimi Antonelli|Mercedes|+2.974",
+        "3|Charles Leclerc|Ferrari|+15.519",
+        "4|Lewis Hamilton|Ferrari|+16.144",
+        "5|Lando Norris|McLaren|+51.741",
+        "6|Max Verstappen|Red Bull|+54.617",
+        "7|Oliver Bearman|Haas F1 Team|+4.593",
+        "8|Arvid Lindblad|RB F1 Team|+11.816",
+        "9|Gabriel Bortoleto|Audi|+12.775",
+        "10|Pierre Gasly|Alpine F1 Team|+29.027",
+        "11|Esteban Ocon|Haas F1 Team|+29.850",
+        "12|Alexander Albon|Williams|+56.075",
+        "13|Liam Lawson|RB F1 Team|+57.173",
+        "14|Franco Colapinto|Alpine F1 Team|+8.487",
+        "15|Carlos Sainz|Williams|+36.886",
+        "16|Sergio Pérez|Cadillac F1 Team|+7.850",
+        "17|Lance Stroll|Aston Martin|Lapped",
+        "18|Fernando Alonso|Aston Martin|Retired",
+        "19|Valtteri Bottas|Cadillac F1 Team|Retired",
+        "20|Isack Hadjar|Red Bull|Retired",
+        "21|Oscar Piastri|McLaren|Did not start",
+        "22|Nico Hülkenberg|Audi|Did not start"
+      ],
+      "overview": {
+        "fastestLap": {
+          "value": "1:22.091",
+          "label": "Max Verstappen · Lap 43"
+        },
+        "fastestPitStop": {
+          "value": "17.649 sec",
+          "label": "norris"
+        },
+        "raceDistance": {
+          "value": "58 laps",
+          "label": "Classified winner laps"
+        }
+      },
+      "dataAvailability": {
+        "sectorTimes": false,
+        "topSpeed": false,
+        "tyreStints": false,
+        "lapTelemetry": false
+      }
+    },
+    "2026-2-chinese-grand-prix": {
+      "sourceId": "jolpica",
+      "results": [
+        "1|Andrea Kimi Antonelli|Mercedes|1:33:15.607",
+        "2|George Russell|Mercedes|+5.515",
+        "3|Lewis Hamilton|Ferrari|+25.267",
+        "4|Charles Leclerc|Ferrari|+28.894",
+        "5|Oliver Bearman|Haas F1 Team|+57.268",
+        "6|Pierre Gasly|Alpine F1 Team|+59.647",
+        "7|Liam Lawson|RB F1 Team|+1:20.588",
+        "8|Isack Hadjar|Red Bull|+1:27.247",
+        "9|Carlos Sainz|Williams|+11.673",
+        "10|Franco Colapinto|Alpine F1 Team|+12.403",
+        "11|Nico Hülkenberg|Audi|+21.109",
+        "12|Arvid Lindblad|RB F1 Team|+22.828",
+        "13|Valtteri Bottas|Cadillac F1 Team|+56.158",
+        "14|Esteban Ocon|Haas F1 Team|+1:06.256",
+        "15|Sergio Pérez|Cadillac F1 Team|+1:14.641",
+        "16|Max Verstappen|Red Bull|Retired",
+        "17|Fernando Alonso|Aston Martin|Retired",
+        "18|Lance Stroll|Aston Martin|Retired",
+        "19|Oscar Piastri|McLaren|Did not start",
+        "20|Lando Norris|McLaren|Did not start",
+        "21|Gabriel Bortoleto|Audi|Did not start",
+        "22|Alexander Albon|Williams|Did not start"
+      ],
+      "overview": {
+        "fastestLap": {
+          "value": "1:35.275",
+          "label": "Andrea Kimi Antonelli · Lap 52"
+        },
+        "fastestPitStop": {
+          "value": "22.433 sec",
+          "label": "hamilton"
+        },
+        "raceDistance": {
+          "value": "56 laps",
+          "label": "Classified winner laps"
+        }
+      },
+      "dataAvailability": {
+        "sectorTimes": false,
+        "topSpeed": false,
+        "tyreStints": false,
+        "lapTelemetry": false
+      }
+    },
+    "2026-3-japanese-grand-prix": {
+      "sourceId": "jolpica",
+      "results": [
+        "1|Andrea Kimi Antonelli|Mercedes|1:28:03.403",
+        "2|Oscar Piastri|McLaren|+13.722",
+        "3|Charles Leclerc|Ferrari|+15.270",
+        "4|George Russell|Mercedes|+15.754",
+        "5|Lando Norris|McLaren|+23.479",
+        "6|Lewis Hamilton|Ferrari|+25.037",
+        "7|Pierre Gasly|Alpine F1 Team|+32.340",
+        "8|Max Verstappen|Red Bull|+32.677",
+        "9|Liam Lawson|RB F1 Team|+50.180",
+        "10|Esteban Ocon|Haas F1 Team|+51.216",
+        "11|Nico Hülkenberg|Audi|+52.280",
+        "12|Isack Hadjar|Red Bull|+56.154",
+        "13|Gabriel Bortoleto|Audi|+59.078",
+        "14|Arvid Lindblad|RB F1 Team|+59.848",
+        "15|Carlos Sainz|Williams|+1:05.008",
+        "16|Franco Colapinto|Alpine F1 Team|+1:05.773",
+        "17|Sergio Pérez|Cadillac F1 Team|+1:32.453",
+        "18|Fernando Alonso|Aston Martin|+26.548",
+        "19|Valtteri Bottas|Cadillac F1 Team|+42.621",
+        "20|Alexander Albon|Williams|+5.067",
+        "21|Lance Stroll|Aston Martin|Retired",
+        "22|Oliver Bearman|Haas F1 Team|Retired"
+      ],
+      "overview": {
+        "fastestLap": {
+          "value": "1:32.432",
+          "label": "Andrea Kimi Antonelli · Lap 49"
+        },
+        "fastestPitStop": {
+          "value": "22.891 sec",
+          "label": "hamilton"
+        },
+        "raceDistance": {
+          "value": "53 laps",
+          "label": "Classified winner laps"
+        }
+      },
+      "dataAvailability": {
+        "sectorTimes": false,
+        "topSpeed": false,
+        "tyreStints": false,
+        "lapTelemetry": false
+      }
+    },
+    "2026-4-miami-grand-prix": {
+      "sourceId": "jolpica",
+      "results": [
+        "1|Andrea Kimi Antonelli|Mercedes|1:33:19.273",
+        "2|Lando Norris|McLaren|+3.264",
+        "3|Oscar Piastri|McLaren|+27.092",
+        "4|George Russell|Mercedes|+43.051",
+        "5|Max Verstappen|Red Bull|+48.949",
+        "6|Lewis Hamilton|Ferrari|+53.753",
+        "7|Franco Colapinto|Alpine F1 Team|+1:01.871",
+        "8|Charles Leclerc|Ferrari|+1:04.245",
+        "9|Carlos Sainz|Williams|+1:22.072",
+        "10|Alexander Albon|Williams|+1:30.972",
+        "11|Oliver Bearman|Haas F1 Team|+6.400",
+        "12|Gabriel Bortoleto|Audi|+9.353",
+        "13|Esteban Ocon|Haas F1 Team|+13.873",
+        "14|Arvid Lindblad|RB F1 Team|+44.781",
+        "15|Fernando Alonso|Aston Martin|+1:14.964",
+        "16|Sergio Pérez|Cadillac F1 Team|+1:17.513",
+        "17|Lance Stroll|Aston Martin|+1:22.631",
+        "18|Valtteri Bottas|Cadillac F1 Team|+1:08.255",
+        "19|Nico Hülkenberg|Audi|Retired",
+        "20|Liam Lawson|RB F1 Team|Retired",
+        "21|Pierre Gasly|Alpine F1 Team|Retired",
+        "22|Isack Hadjar|Red Bull|Retired"
+      ],
+      "overview": {
+        "fastestLap": {
+          "value": "1:31.869",
+          "label": "Lando Norris · Lap 35"
+        },
+        "fastestPitStop": {
+          "value": "17.173 sec",
+          "label": "bottas"
+        },
+        "raceDistance": {
+          "value": "57 laps",
+          "label": "Classified winner laps"
+        }
+      },
+      "dataAvailability": {
+        "sectorTimes": false,
+        "topSpeed": false,
+        "tyreStints": false,
+        "lapTelemetry": false
+      }
+    },
+    "2026-5-canadian-grand-prix": {
+      "sourceId": "jolpica",
+      "results": [
+        "1|Andrea Kimi Antonelli|Mercedes|1:28:15.758",
+        "2|Lewis Hamilton|Ferrari|+10.768",
+        "3|Max Verstappen|Red Bull|+11.276",
+        "4|Charles Leclerc|Ferrari|+44.151",
+        "5|Isack Hadjar|Red Bull|+5.033",
+        "6|Franco Colapinto|Alpine F1 Team|+19.510",
+        "7|Liam Lawson|RB F1 Team|+34.235",
+        "8|Pierre Gasly|Alpine F1 Team|+34.572",
+        "9|Carlos Sainz|Williams|+58.014",
+        "10|Oliver Bearman|Haas F1 Team|+59.049",
+        "11|Oscar Piastri|McLaren|+12.699",
+        "12|Nico Hülkenberg|Audi|+14.182",
+        "13|Gabriel Bortoleto|Audi|+21.156",
+        "14|Esteban Ocon|Haas F1 Team|+1:08.635",
+        "15|Lance Stroll|Aston Martin|+18.397",
+        "16|Valtteri Bottas|Cadillac F1 Team|+53.390",
+        "17|Sergio Pérez|Cadillac F1 Team|Retired",
+        "18|Lando Norris|McLaren|Retired",
+        "19|George Russell|Mercedes|Retired",
+        "20|Fernando Alonso|Aston Martin|Retired",
+        "21|Alexander Albon|Williams|Retired",
+        "22|Arvid Lindblad|RB F1 Team|Did not start"
+      ],
+      "overview": {
+        "fastestLap": {
+          "value": "1:14.210",
+          "label": "Andrea Kimi Antonelli · Lap 68"
+        },
+        "fastestPitStop": {
+          "value": "23.418 sec",
+          "label": "norris"
+        },
+        "raceDistance": {
+          "value": "68 laps",
+          "label": "Classified winner laps"
+        }
+      },
+      "dataAvailability": {
+        "sectorTimes": false,
+        "topSpeed": false,
+        "tyreStints": false,
+        "lapTelemetry": false
+      }
+    },
+    "2026-6-monaco-grand-prix": {
+      "sourceId": "jolpica",
+      "results": [
+        "1|Andrea Kimi Antonelli|Mercedes|2:23:31.243",
+        "2|Lewis Hamilton|Ferrari|+6.271",
+        "3|Isack Hadjar|Red Bull|+23.394",
+        "4|Oscar Piastri|McLaren|+24.261",
+        "5|Liam Lawson|RB F1 Team|+26.553",
+        "6|Arvid Lindblad|RB F1 Team|+29.010",
+        "7|Pierre Gasly|Alpine F1 Team|+30.369",
+        "8|Alexander Albon|Williams|+33.413",
+        "9|Esteban Ocon|Haas F1 Team|+37.140",
+        "10|Fernando Alonso|Aston Martin|+41.899",
+        "11|Gabriel Bortoleto|Audi|+42.748",
+        "12|George Russell|Mercedes|+43.353",
+        "13|Nico Hülkenberg|Audi|+44.102",
+        "14|Franco Colapinto|Alpine F1 Team|+48.964",
+        "15|Sergio Pérez|Cadillac F1 Team|+49.153",
+        "16|Carlos Sainz|Williams|Retired",
+        "17|Charles Leclerc|Ferrari|Retired",
+        "18|Lance Stroll|Aston Martin|Retired",
+        "19|Lando Norris|McLaren|Retired",
+        "20|Oliver Bearman|Haas F1 Team|Retired",
+        "21|Valtteri Bottas|Cadillac F1 Team|Retired",
+        "22|Max Verstappen|Red Bull|Retired"
+      ],
+      "overview": {
+        "fastestLap": {
+          "value": "1:13.481",
+          "label": "Andrea Kimi Antonelli · Lap 76"
+        },
+        "fastestPitStop": {
+          "value": "19.675 sec",
+          "label": "hadjar"
+        },
+        "raceDistance": {
+          "value": "78 laps",
+          "label": "Classified winner laps"
+        }
+      },
+      "dataAvailability": {
+        "sectorTimes": false,
+        "topSpeed": false,
+        "tyreStints": false,
+        "lapTelemetry": false
+      }
+    },
+    "2026-7-barcelona-grand-prix": {
+      "sourceId": "jolpica",
+      "results": [
+        "1|Lewis Hamilton|Ferrari|1:32:28.105",
+        "2|George Russell|Mercedes|+19.561",
+        "3|Lando Norris|McLaren|+23.719",
+        "4|Max Verstappen|Red Bull|+40.497",
+        "5|Oscar Piastri|McLaren|+58.661",
+        "6|Isack Hadjar|Red Bull|+24.627",
+        "7|Pierre Gasly|Alpine F1 Team|+55.789",
+        "8|Liam Lawson|RB F1 Team|+1:12.224",
+        "9|Arvid Lindblad|RB F1 Team|+1:18.074",
+        "10|Franco Colapinto|Alpine F1 Team|+1:19.867",
+        "11|Gabriel Bortoleto|Audi|+26.687",
+        "12|Carlos Sainz|Williams|+27.866",
+        "13|Esteban Ocon|Haas F1 Team|+59.149",
+        "14|Sergio Pérez|Cadillac F1 Team|+7.769",
+        "15|Charles Leclerc|Ferrari|Retired",
+        "16|Andrea Kimi Antonelli|Mercedes|Retired",
+        "17|Oliver Bearman|Haas F1 Team|Retired",
+        "18|Alexander Albon|Williams|Lapped",
+        "19|Fernando Alonso|Aston Martin|Retired",
+        "20|Nico Hülkenberg|Audi|Retired",
+        "21|Valtteri Bottas|Cadillac F1 Team|Retired",
+        "22|Lance Stroll|Aston Martin|Retired"
+      ],
+      "overview": {
+        "fastestLap": {
+          "value": "1:20.122",
+          "label": "Lewis Hamilton · Lap 44"
+        },
+        "fastestPitStop": {
+          "value": "21.677 sec",
+          "label": "russell"
+        },
+        "raceDistance": {
+          "value": "66 laps",
+          "label": "Classified winner laps"
+        }
+      },
+      "dataAvailability": {
+        "sectorTimes": false,
+        "topSpeed": false,
+        "tyreStints": false,
+        "lapTelemetry": false
+      }
+    },
+    "2026-8-austrian-grand-prix": {
+      "sourceId": "jolpica",
+      "results": [
+        "1|George Russell|Mercedes|1:26:37.979",
+        "2|Max Verstappen|Red Bull|+1.611",
+        "3|Andrea Kimi Antonelli|Mercedes|+1.986",
+        "4|Oscar Piastri|McLaren|+21.809",
+        "5|Lewis Hamilton|Ferrari|+26.393",
+        "6|Isack Hadjar|Red Bull|+29.399",
+        "7|Lando Norris|McLaren|+31.505",
+        "8|Charles Leclerc|Ferrari|+45.659",
+        "9|Liam Lawson|RB F1 Team|+15.334",
+        "10|Arvid Lindblad|RB F1 Team|+19.030",
+        "11|Gabriel Bortoleto|Audi|+30.315",
+        "12|Nico Hülkenberg|Audi|+38.484",
+        "13|Pierre Gasly|Alpine F1 Team|+39.251",
+        "14|Oliver Bearman|Haas F1 Team|+1:02.677",
+        "15|Franco Colapinto|Alpine F1 Team|+1:05.647",
+        "16|Esteban Ocon|Haas F1 Team|+25.932",
+        "17|Alexander Albon|Williams|+28.082",
+        "18|Fernando Alonso|Aston Martin|+4.833",
+        "19|Lance Stroll|Aston Martin|Retired",
+        "20|Carlos Sainz|Williams|Retired",
+        "21|Sergio Pérez|Cadillac F1 Team|Retired",
+        "22|Valtteri Bottas|Cadillac F1 Team|Retired"
+      ],
+      "overview": {
+        "fastestLap": {
+          "value": "1:10.374",
+          "label": "Andrea Kimi Antonelli · Lap 59"
+        },
+        "fastestPitStop": {
+          "value": "21.020 sec",
+          "label": "leclerc"
+        },
+        "raceDistance": {
+          "value": "71 laps",
+          "label": "Classified winner laps"
+        }
+      },
+      "dataAvailability": {
+        "sectorTimes": false,
+        "topSpeed": false,
+        "tyreStints": false,
+        "lapTelemetry": false
+      }
+    },
+    "2026-9-british-grand-prix": {
+      "sourceId": "jolpica",
+      "results": [
+        "1|Charles Leclerc|Ferrari|1:27:11.335",
+        "2|George Russell|Mercedes|+0.427",
+        "3|Lewis Hamilton|Ferrari|+0.772",
+        "4|Lando Norris|McLaren|+1.149",
+        "5|Isack Hadjar|Red Bull|+1.598",
+        "6|Liam Lawson|RB F1 Team|+2.023",
+        "7|Arvid Lindblad|RB F1 Team|+2.214",
+        "8|Gabriel Bortoleto|Audi|+2.413",
+        "9|Franco Colapinto|Alpine F1 Team|+3.229",
+        "10|Pierre Gasly|Alpine F1 Team|+3.445",
+        "11|Oscar Piastri|McLaren|+4.014",
+        "12|Oliver Bearman|Haas F1 Team|+5.245",
+        "13|Esteban Ocon|Haas F1 Team|+5.512",
+        "14|Sergio Pérez|Cadillac F1 Team|+7.403",
+        "15|Andrea Kimi Antonelli|Mercedes|+8.005",
+        "16|Valtteri Bottas|Cadillac F1 Team|+8.162",
+        "17|Carlos Sainz|Williams|+4.391",
+        "18|Fernando Alonso|Aston Martin|+4.980",
+        "19|Lance Stroll|Aston Martin|+6.750",
+        "20|Max Verstappen|Red Bull|Retired",
+        "21|Alexander Albon|Williams|Retired",
+        "22|Nico Hülkenberg|Audi|Retired"
+      ],
+      "overview": {
+        "fastestLap": {
+          "value": "1:31.777",
+          "label": "Andrea Kimi Antonelli · Lap 37"
+        },
+        "fastestPitStop": {
+          "value": "28.337 sec",
+          "label": "russell"
+        },
+        "raceDistance": {
+          "value": "52 laps",
+          "label": "Classified winner laps"
+        }
+      },
+      "dataAvailability": {
+        "sectorTimes": false,
+        "topSpeed": false,
+        "tyreStints": false,
+        "lapTelemetry": false
+      }
+    },
+    "2026-10-belgian-grand-prix": {
+      "sourceId": "jolpica",
+      "results": [
+        "1|Andrea Kimi Antonelli|Mercedes|1:24:42.479",
+        "2|Charles Leclerc|Ferrari|+1.952",
+        "3|Max Verstappen|Red Bull|+11.586",
+        "4|Lewis Hamilton|Ferrari|+17.245",
+        "5|Oscar Piastri|McLaren|+18.988",
+        "6|Isack Hadjar|Red Bull|+23.307",
+        "7|Lando Norris|McLaren|+24.014",
+        "8|Gabriel Bortoleto|Audi|+49.140",
+        "9|Arvid Lindblad|RB F1 Team|+50.406",
+        "10|Franco Colapinto|Alpine F1 Team|+1:16.037",
+        "11|Pierre Gasly|Alpine F1 Team|+1:16.991",
+        "12|Liam Lawson|RB F1 Team|+1:17.523",
+        "13|Nico Hülkenberg|Audi|+1:18.348",
+        "14|Oliver Bearman|Haas F1 Team|+1:34.465",
+        "15|Alexander Albon|Williams|+1:44.684",
+        "16|Carlos Sainz|Williams|+1:45.856",
+        "17|Esteban Ocon|Haas F1 Team|+1:50.925",
+        "18|Valtteri Bottas|Cadillac F1 Team|+1:00.979",
+        "19|Fernando Alonso|Aston Martin|+20.848",
+        "20|Lance Stroll|Aston Martin|Retired",
+        "21|Sergio Pérez|Cadillac F1 Team|Retired",
+        "22|George Russell|Mercedes|Retired"
+      ],
+      "overview": {
+        "fastestLap": {
+          "value": "1:48.890",
+          "label": "Lando Norris · Lap 44"
+        },
+        "fastestPitStop": {
+          "value": "22.638 sec",
+          "label": "albon"
+        },
+        "raceDistance": {
+          "value": "44 laps",
+          "label": "Classified winner laps"
+        }
+      },
+      "dataAvailability": {
+        "sectorTimes": false,
+        "topSpeed": false,
+        "tyreStints": false,
+        "lapTelemetry": false
+      }
+    },
+    "2026-11-hungarian-grand-prix": {
+      "sourceId": "jolpica",
+      "results": [
+        "1|Lando Norris|McLaren|1:39:56.180",
+        "2|Max Verstappen|Red Bull|+15.080",
+        "3|Andrea Kimi Antonelli|Mercedes|+18.728",
+        "4|Charles Leclerc|Ferrari|+23.840",
+        "5|Lewis Hamilton|Ferrari|+24.540",
+        "6|Isack Hadjar|Red Bull|+55.488",
+        "7|George Russell|Mercedes|+57.503",
+        "8|Liam Lawson|RB F1 Team|+28.033",
+        "9|Nico Hülkenberg|Audi|+30.382",
+        "10|Arvid Lindblad|RB F1 Team|+51.050",
+        "11|Gabriel Bortoleto|Audi|+52.028",
+        "12|Pierre Gasly|Alpine F1 Team|+53.429",
+        "13|Lance Stroll|Aston Martin|+1:03.828",
+        "14|Fernando Alonso|Aston Martin|+1:06.052",
+        "15|Franco Colapinto|Alpine F1 Team|+3.876",
+        "16|Esteban Ocon|Haas F1 Team|+12.859",
+        "17|Alexander Albon|Williams|+52.729",
+        "18|Carlos Sainz|Williams|+52.973",
+        "19|Oliver Bearman|Haas F1 Team|+57.198",
+        "20|Oscar Piastri|McLaren|Retired",
+        "21|Sergio Pérez|Cadillac F1 Team|Retired",
+        "22|Valtteri Bottas|Cadillac F1 Team|Retired"
+      ],
+      "overview": {
+        "fastestLap": {
+          "value": "1:22.000",
+          "label": "Charles Leclerc · Lap 58"
+        },
+        "fastestPitStop": {
+          "value": "21.326 sec",
+          "label": "antonelli"
+        },
+        "raceDistance": {
+          "value": "70 laps",
+          "label": "Classified winner laps"
+        }
+      },
+      "dataAvailability": {
+        "sectorTimes": false,
+        "topSpeed": false,
+        "tyreStints": false,
+        "lapTelemetry": false
+      }
+    },
+    "2026-12-dutch-grand-prix": {
+      "sourceId": "jolpica",
+      "results": [
+        "1|Lando Norris|McLaren|2:04:44.859",
+        "2|Andrea Kimi Antonelli|Mercedes|+11.536",
+        "3|George Russell|Mercedes|+15.906",
+        "4|Lewis Hamilton|Ferrari|+16.755",
+        "5|Charles Leclerc|Ferrari|+17.258",
+        "6|Oscar Piastri|McLaren|+32.332",
+        "7|Liam Lawson|Red Bull|+1:19.915",
+        "8|Nico Hülkenberg|Audi|+36.049",
+        "9|Fernando Alonso|Aston Martin|+48.393",
+        "10|Pierre Gasly|Alpine F1 Team|+49.640",
+        "11|Yuki Tsunoda|RB F1 Team|+54.322",
+        "12|Arvid Lindblad|RB F1 Team|+1:05.680",
+        "13|Gabriel Bortoleto|Audi|+1:06.235",
+        "14|Franco Colapinto|Alpine F1 Team|+20.534",
+        "15|Sergio Pérez|Cadillac F1 Team|+58.582",
+        "16|Carlos Sainz|Williams|+1:10.271",
+        "17|Alexander Albon|Williams|Retired",
+        "18|Valtteri Bottas|Cadillac F1 Team|Retired",
+        "19|Esteban Ocon|Haas F1 Team|Retired",
+        "20|Lance Stroll|Aston Martin|Retired",
+        "21|Oliver Bearman|Haas F1 Team|Retired",
+        "22|Max Verstappen|Red Bull|Retired"
+      ],
+      "overview": {
+        "fastestLap": {
+          "value": "1:14.230",
+          "label": "Charles Leclerc · Lap 60"
+        },
+        "fastestPitStop": {
+          "value": "12.092 sec",
+          "label": "colapinto"
+        },
+        "raceDistance": {
+          "value": "72 laps",
+          "label": "Classified winner laps"
+        }
+      },
+      "dataAvailability": {
+        "sectorTimes": false,
+        "topSpeed": false,
+        "tyreStints": false,
+        "lapTelemetry": false
+      }
+    },
+    "2026-13-italian-grand-prix": {
+      "sourceId": "jolpica",
+      "results": [
+        "1|Andrea Kimi Antonelli|Mercedes|1:51:15.281",
+        "2|George Russell|Mercedes|+3.857",
+        "3|Max Verstappen|Red Bull|+14.718",
+        "4|Lando Norris|McLaren|+19.056",
+        "5|Oscar Piastri|McLaren|+19.253",
+        "6|Lewis Hamilton|Ferrari|+24.655",
+        "7|Pierre Gasly|Alpine F1 Team|+27.351",
+        "8|Arvid Lindblad|RB F1 Team|+45.136",
+        "9|Franco Colapinto|Alpine F1 Team|+47.353",
+        "10|Yuki Tsunoda|RB F1 Team|+58.187",
+        "11|Gabriel Bortoleto|Audi|+1:05.187",
+        "12|Nico Hülkenberg|Audi|+1:06.187",
+        "13|Carlos Sainz|Williams|+1:14.117",
+        "14|Liam Lawson|Red Bull|+1:15.609",
+        "15|Oliver Bearman|Haas F1 Team|+1:18.958",
+        "16|Esteban Ocon|Haas F1 Team|+6.591",
+        "17|Alexander Albon|Williams|+20.268",
+        "18|Sergio Pérez|Cadillac F1 Team|+1:13.372",
+        "19|Valtteri Bottas|Cadillac F1 Team|+12.880",
+        "20|Lance Stroll|Aston Martin|Retired",
+        "21|Fernando Alonso|Aston Martin|Retired",
+        "22|Charles Leclerc|Ferrari|Retired"
+      ],
+      "overview": {
+        "fastestLap": {
+          "value": "1:23.504",
+          "label": "Andrea Kimi Antonelli · Lap 53"
+        },
+        "fastestPitStop": {
+          "value": "24.246 sec",
+          "label": "hulkenberg"
+        },
+        "raceDistance": {
+          "value": "53 laps",
+          "label": "Classified winner laps"
+        }
+      },
+      "dataAvailability": {
+        "sectorTimes": false,
+        "topSpeed": false,
+        "tyreStints": false,
+        "lapTelemetry": false
+      }
+    },
+    "2026-14-spanish-grand-prix": {
+      "sourceId": "jolpica",
+      "results": [
+        "1|Andrea Kimi Antonelli|Mercedes|1:34:23.754",
+        "2|Max Verstappen|Red Bull|+4.351",
+        "3|Lando Norris|McLaren|+5.089",
+        "4|Charles Leclerc|Ferrari|+29.116",
+        "5|George Russell|Mercedes|+29.829",
+        "6|Liam Lawson|Red Bull|+1:26.746",
+        "7|Franco Colapinto|Alpine F1 Team|+1:34.281",
+        "8|Oscar Piastri|McLaren|+1:35.839",
+        "9|Arvid Lindblad|RB F1 Team|+10.408",
+        "10|Nico Hülkenberg|Audi|+11.298",
+        "11|Esteban Ocon|Haas F1 Team|+15.143",
+        "12|Pierre Gasly|Alpine F1 Team|+26.152",
+        "13|Gabriel Bortoleto|Audi|+28.389",
+        "14|Yuki Tsunoda|RB F1 Team|+1:00.163",
+        "15|Alexander Albon|Williams|+1:26.212",
+        "16|Oliver Bearman|Haas F1 Team|+1:29.963",
+        "17|Fernando Alonso|Aston Martin|+33.776",
+        "18|Valtteri Bottas|Cadillac F1 Team|+49.246",
+        "19|Carlos Sainz|Williams|Retired",
+        "20|Sergio Pérez|Cadillac F1 Team|Retired",
+        "21|Lance Stroll|Aston Martin|Retired",
+        "22|Lewis Hamilton|Ferrari|Retired"
+      ],
+      "overview": {
+        "fastestLap": {
+          "value": "1:35.587",
+          "label": "George Russell · Lap 49"
+        },
+        "fastestPitStop": {
+          "value": "30.622 sec",
+          "label": "russell"
+        },
+        "raceDistance": {
+          "value": "57 laps",
+          "label": "Classified winner laps"
+        }
+      },
+      "dataAvailability": {
+        "sectorTimes": false,
+        "topSpeed": false,
+        "tyreStints": false,
+        "lapTelemetry": false
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "clusterId": "example-floor-update",
+    "sourceId": "approved-source-one",
+    "canonicalUrl": "https://example.com/story-one",
+    "publishedAt": "2026-09-22T08:00:00Z",
+    "title": "Provider headline",
+    "licensedBrief": "A short brief expressly licensed for this APEX workflow.",
+    "componentKey": "floor"
+  },
+  {
+    "clusterId": "example-floor-update",
+    "sourceId": "approved-source-two",
+    "canonicalUrl": "https://example.org/story-two",
+    "publishedAt": "2026-09-22T08:30:00Z",
+    "title": "Second provider headline",
+    "licensedBrief": "A second short brief expressly licensed for this APEX workflow.",
+    "componentKey": "floor"
+  }
+]

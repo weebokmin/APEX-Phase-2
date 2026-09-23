@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "mode": "outbound-links-only",
+  "provider": "Formula 1",
+  "newsUrl": "https://www.formula1.com/en/latest",
+  "liveTimingUrl": "https://f1tv.formula1.com/",
+  "rssIngestion": "blocked-pending-express-licence",
+  "timingIngestion": "blocked-pending-express-licence",
+  "lastTermsReview": "2026-09-22",
+  "termsUrl": "https://www.formula1.com/en/information/legal-notices.7egvZU48hzrypubGBNcQKt",
+  "guidelinesUrl": "https://www.formula1.com/en/information/guidelines.4EOKE9RRqevL4niTK9kWyt",
+  "activationRequirement": "Record Formula 1's written licence for the exact fields, territory, intended use, storage, redistribution and any AI processing before changing either ingestion state."
+}

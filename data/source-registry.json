@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": "jolpica",
+      "displayName": "Jolpica",
+      "kind": "race-data",
+      "enabled": true,
+      "baseUrl": "https://api.jolpi.ca/ergast/f1",
+      "permittedFields": ["calendar", "race-results", "standings", "lap-times", "pit-stops"],
+      "license": "CC BY-NC-SA 4.0",
+      "termsUrl": "https://github.com/jolpica/jolpica-f1/blob/main/TERMS.md",
+      "activationRequirement": "Confirmed by the project owner on 2026-09-23: APEX will operate without advertising or paid services and will comply with attribution, share-alike, and rate-limit obligations.",
+      "rateLimitsUrl": "https://github.com/jolpica/jolpica-f1/blob/main/docs/rate_limits.md"
+    },
+    {
+      "id": "licensed-editorial-feed",
+      "displayName": "Licensed editorial feed",
+      "kind": "news",
+      "enabled": false,
+      "baseUrl": "",
+      "permittedFields": ["title", "canonicalUrl", "publishedAt", "licensedBrief"],
+      "license": "Set after written permission or a feed licence is recorded.",
+      "termsUrl": "",
+      "activationRequirement": "A source-specific licence must expressly allow automated use of the supplied brief to create and publish a derived concise summary."
+    },
+    {
+      "id": "official-f1",
+      "displayName": "Formula 1",
+      "kind": "news-and-timing",
+      "enabled": false,
+      "baseUrl": "https://www.formula1.com",
+      "permittedFields": [],
+      "license": "Do not ingest into APEX without a direct licence.",
+      "termsUrl": "https://www.formula1.com/en/information/legal-notices.7egvZU48hzrypubGBNcQKt",
+      "activationRequirement": "Blocked: official RSS and timing terms do not provide permission for this product's AI summary/republication path."
+    },
+    {
+      "id": "advanced-session-data",
+      "displayName": "Advanced session-data provider",
+      "kind": "lap-sector-speed-tyre",
+      "enabled": false,
+      "baseUrl": "",
+      "permittedFields": [],
+      "license": "Pending provider contract.",
+      "termsUrl": "",
+      "activationRequirement": "Do not connect FastF1 or unofficial timing endpoints until the upstream data licence has been reviewed and approved for this use."
+    }
+  ]
+}
