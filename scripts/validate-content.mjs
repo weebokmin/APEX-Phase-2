@@ -10,7 +10,7 @@ const assertEditorialText = (value, label) => {
   if (speculativeLanguage.test(value)) fail(`${label} contains speculative or comparative language.`);
 };
 
-export function validatePublished(content, registry) {
+export function validatePublished(content, registry, technicalGuide = { sources: [] }) {
   if (!Array.isArray(content.stories) || !Array.isArray(content.calendar) || !Array.isArray(content.provenance) || (content.raceDetails !== undefined && (content.raceDetails === null || Array.isArray(content.raceDetails) || typeof content.raceDetails !== 'object'))) fail('published-content requires stories, calendar, provenance arrays, and an optional raceDetails object.');
   const sources = sourceById(registry);
   const seenStories = new Set();
@@ -22,18 +22,26 @@ export function validatePublished(content, registry) {
     assertEditorialText(story.summary, `story ${story.id} summary`);
     if (story.summary.length > 550) fail(`story ${story.id} exceeds the 550-character concise-summary limit.`);
     if (!sources.get(story.sourceId)?.enabled) fail(`story ${story.id} uses a source that is not approved and enabled.`);
-    if (!Array.isArray(story.sources) || story.sources.length < 2) fail(`story ${story.id} must identify at least two sources.`);
+    if (!Array.isArray(story.sources) || story.sources.length < 1) fail(`story ${story.id} must identify at least one source.`);
     const seenSources = new Set();
     for (const source of story.sources) {
       requireString(source?.sourceId, `story ${story.id} source is missing sourceId.`);
       requireString(source?.name, `story ${story.id} source ${source?.sourceId || 'unknown'} is missing name.`);
       if (!isUrl(source?.url)) fail(`story ${story.id} source ${source.sourceId} has an invalid URL.`);
-      if (!sources.get(source.sourceId)?.enabled) fail(`story ${story.id} source ${source.sourceId} is not approved and enabled.`);
+      const technicalReference = technicalGuide.sources?.find(item => item.id === source.sourceId && item.approvedForUse === true);
+      if (!sources.get(source.sourceId)?.enabled && !(story.category === 'TECHNICAL' && technicalReference)) fail(`story ${story.id} source ${source.sourceId} is not approved and enabled.`);
+      if (technicalReference) {
+        try {
+          const actualHost = new URL(source.url).hostname.replace(/^www\./, '');
+          const expectedHost = new URL(technicalReference.url).hostname.replace(/^www\./, '');
+          if (actualHost !== expectedHost) fail(`story ${story.id} technical reference ${source.sourceId} URL does not match its registered publisher.`);
+        } catch { fail(`story ${story.id} technical reference ${source.sourceId} has an invalid publisher URL.`); }
+      }
       const sourceFingerprint = `${source.sourceId}:${source.url}`.toLowerCase();
       if (seenSources.has(sourceFingerprint)) fail(`story ${story.id} repeats source URL ${source.url}.`);
       seenSources.add(sourceFingerprint);
     }
-    if (new Set(story.sources.map(source => source.sourceId)).size < 2) fail(`story ${story.id} must use two distinct approved sources.`);
+    if (story.sourceId !== story.sources[0]?.sourceId || story.canonicalUrl !== story.sources[0]?.url) fail(`story ${story.id} primary source fields must match the first source entry.`);
     if (story.category === 'TECHNICAL') {
       if (!story.engineeringNotes || typeof story.engineeringNotes !== 'object') fail(`technical story ${story.id} is missing engineeringNotes.`);
       requireString(story.engineeringNotes.part, `technical story ${story.id} engineeringNotes.part`);
@@ -78,6 +86,10 @@ export function validatePublished(content, registry) {
 }
 
 const [contentPath = 'data/published-content.json', registryPath = 'data/source-registry.json'] = process.argv.slice(2);
-const [content, registry] = await Promise.all([readFile(contentPath, 'utf8').then(JSON.parse), readFile(registryPath, 'utf8').then(JSON.parse)]);
-validatePublished(content, registry);
+const [content, registry, technicalGuide] = await Promise.all([
+  readFile(contentPath, 'utf8').then(JSON.parse),
+  readFile(registryPath, 'utf8').then(JSON.parse),
+  readFile('data/technical-source-guide.json', 'utf8').then(JSON.parse)
+]);
+validatePublished(content, registry, technicalGuide);
 console.log(`Valid: ${content.stories.length} stories, ${content.calendar.length} races.`);

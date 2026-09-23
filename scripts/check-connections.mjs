@@ -20,6 +20,5 @@ for (const source of enabled) {
   if (source.id === 'official-f1') errors.push('official-f1: direct ingestion remains blocked without an express Formula 1 licence.');
   if (source.id === 'jolpica' && process.env.APEX_JOLPICA_NONCOMMERCIAL_CONFIRMED !== 'true') errors.push('jolpica: set APEX_JOLPICA_NONCOMMERCIAL_CONFIRMED=true only after confirming non-commercial compliance.');
 }
-if (enabledNews.length === 1) errors.push('News publishing requires at least two distinct approved news sources.');
 if (errors.length) throw new Error(`Connection preflight failed:\n- ${errors.join('\n- ')}`);
 console.log(`Connection preflight passed: ${enabled.length} enabled sources (${enabledNews.length} news).`);

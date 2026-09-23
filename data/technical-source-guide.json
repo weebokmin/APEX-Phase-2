@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "policy": "These are research-source candidates, not automatically approved feeds or evidence. A generated article may use a source only when a source-specific factual brief is included with the candidate and its reuse conditions have been reviewed. Do not infer facts from a source name or URL.",
+  "sources": [
+    { "id": "f1technical", "name": "F1Technical.net", "url": "https://www.f1technical.net/", "role": "Technical reporting and discussion; verify factual claims against the linked report.", "approvedForUse": false },
+    { "id": "racecar-engineering", "name": "Racecar Engineering", "url": "https://www.racecar-engineering.com/", "role": "Engineering journalism and technical features.", "approvedForUse": false },
+    { "id": "formu1a-uno", "name": "Formu1a.uno", "url": "https://www.formu1a.uno/", "role": "Italian-language F1 reporting, including reported technical developments.", "approvedForUse": false },
+    { "id": "scarbs-tech", "name": "ScarbsTech", "url": "https://scarbsf1.com/", "role": "Technical explanations and illustrations; use as background, not proof of team intent.", "approvedForUse": false },
+    { "id": "f1-data-analytics", "name": "F1 Data Analytics", "url": "https://f1dataanalytics.com/", "role": "Data visualizations and analysis; retain the stated dataset and methodology.", "approvedForUse": false },
+    { "id": "motorsport-technology", "name": "Motorsport Technology", "url": "https://motorsport.tech/", "role": "Motorsport technology and data-science coverage.", "approvedForUse": false },
+    { "id": "statsf1", "name": "StatsF1", "url": "https://www.statsf1.com/", "role": "Historical F1 statistics; verify season and event context.", "approvedForUse": false },
+    { "id": "ergast-api", "name": "Ergast Developer API", "url": "https://ergast.com/mrd/", "role": "Historical results API reference; current data access is handled separately through the configured Jolpica connection.", "approvedForUse": false },
+    { "id": "openf1", "name": "OpenF1", "url": "https://openf1.org/", "role": "Session data API candidate; do not use until data-use terms and fields are reviewed.", "approvedForUse": false },
+    { "id": "fastf1-docs", "name": "FastF1 Documentation", "url": "https://docs.fastf1.dev/", "role": "Library documentation, not a standalone licence for upstream timing data.", "approvedForUse": false },
+    { "id": "blackbook-motorsport", "name": "BlackBook Motorsport", "url": "https://www.blackbookmotorsport.com/", "role": "Motorsport business and sponsorship reporting.", "approvedForUse": false },
+    { "id": "sportbusiness", "name": "SportBusiness", "url": "https://www.sportbusiness.com/", "role": "Sports industry and business reporting; check article access and reuse terms.", "approvedForUse": false },
+    { "id": "joe-saward", "name": "Joe Saward / The Green Notebook", "url": "https://joesaward.wordpress.com/", "role": "Paddock commentary and reporting; attribute claims and preserve opinion as opinion.", "approvedForUse": false },
+    { "id": "decalspotters", "name": "Decalspotters", "url": "https://decalspotters.com/", "role": "Livery and sponsor-mark tracking; distinguish observed marks from sponsorship deal terms.", "approvedForUse": false },
+    { "id": "forbes-sportsmoney", "name": "Forbes SportsMoney", "url": "https://www.forbes.com/", "role": "Business and valuation reporting; label estimates and attribute them.", "approvedForUse": false },
+    { "id": "racefans-live", "name": "RaceFans Live", "url": "https://www.racefans.net/live/", "role": "Live session timing context; not a general article feed or a substitute for a licensed timing provider.", "approvedForUse": false },
+    { "id": "f1bytes", "name": "F1Bytes", "url": "https://f1bytes.substack.com/", "role": "Data-led newsletter analysis; preserve its methodology and do not restate analysis as official fact.", "approvedForUse": false },
+    { "id": "gp-racing", "name": "GP Racing Magazine", "url": "https://www.gpracing.com/", "role": "Interviews and long-form features; use only source-approved briefs.", "approvedForUse": false },
+    { "id": "project-f1", "name": "Project F1", "url": "https://projectf1.com.au/", "role": "Data modelling and race-pace analysis; attribute methods and scope.", "approvedForUse": false },
+    { "id": "lights-out-blog", "name": "Lights Out F1 Blog", "url": "https://lightsoutblog.com/", "role": "Statistics and milestone archive; verify dates and underlying records.", "approvedForUse": false }
+  ]
+}

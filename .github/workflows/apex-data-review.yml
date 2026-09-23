@@ -28,8 +28,8 @@ jobs:
       - run: node scripts/collect-news.mjs
       - run: node scripts/review-news.mjs
         env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          APEX_EDITORIAL_MODEL: ${{ vars.APEX_EDITORIAL_MODEL }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
       - run: node scripts/validate-content.mjs
       - run: npm run build
       - uses: peter-evans/create-pull-request@v7
