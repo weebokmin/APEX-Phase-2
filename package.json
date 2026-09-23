@@ -1,0 +1,13 @@
+{
+  "name": "apex-f1-editorial",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/prepare-deploy.mjs",
+    "validate": "node scripts/validate-content.mjs",
+    "check:connections": "node scripts/check-connections.mjs",
+    "collect:news": "node scripts/collect-news.mjs",
+    "sync:calendar": "node scripts/sync-race-data.mjs",
+    "review:news": "node scripts/review-news.mjs"
+  }
+}
