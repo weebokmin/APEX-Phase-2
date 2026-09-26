@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-23T15:08:48.981Z",
+  "generatedAt": "2026-09-26T12:33:51.517Z",
   "provenance": [
     {
       "sourceId": "f1technical",
@@ -10,7 +10,7 @@
     },
     {
       "sourceId": "jolpica",
-      "retrievedAt": "2026-09-23T15:08:48.981Z",
+      "retrievedAt": "2026-09-26T12:33:51.517Z",
       "termsUrl": "https://github.com/jolpica/jolpica-f1/blob/main/TERMS.md",
       "transform": "Calendar, race classifications, fastest lap and pit-stop duration candidates from https://api.jolpi.ca/ergast/f1; fields without an approved provider remain unavailable."
     }
