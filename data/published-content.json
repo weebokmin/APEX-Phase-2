@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-23T15:08:48.981Z",
+  "generatedAt": "2026-10-03T15:47:17.839Z",
   "provenance": [
     {
       "sourceId": "f1technical",
@@ -10,7 +10,7 @@
     },
     {
       "sourceId": "jolpica",
-      "retrievedAt": "2026-09-23T15:08:48.981Z",
+      "retrievedAt": "2026-10-03T15:47:17.839Z",
       "termsUrl": "https://github.com/jolpica/jolpica-f1/blob/main/TERMS.md",
       "transform": "Calendar, race classifications, fastest lap and pit-stop duration candidates from https://api.jolpi.ca/ergast/f1; fields without an approved provider remain unavailable."
     }
@@ -179,7 +179,7 @@
       "name": "Azerbaijan Grand Prix",
       "country": "Azerbaijan",
       "date": "2026-09-26",
-      "status": "upcoming",
+      "status": "completed",
       "sourceId": "jolpica"
     },
     {
@@ -904,6 +904,53 @@
         },
         "raceDistance": {
           "value": "57 laps",
+          "label": "Classified winner laps"
+        }
+      },
+      "dataAvailability": {
+        "sectorTimes": false,
+        "topSpeed": false,
+        "tyreStints": false,
+        "lapTelemetry": false
+      }
+    },
+    "2026-15-azerbaijan-grand-prix": {
+      "sourceId": "jolpica",
+      "results": [
+        "1|George Russell|Mercedes|1:38:02.143",
+        "2|Max Verstappen|Red Bull|+0.196",
+        "3|Isack Hadjar|Red Bull|+10.704",
+        "4|Charles Leclerc|Ferrari|+14.136",
+        "5|Andrea Kimi Antonelli|Mercedes|+14.512",
+        "6|Lewis Hamilton|Ferrari|+22.382",
+        "7|Arvid Lindblad|RB F1 Team|+31.159",
+        "8|Esteban Ocon|Haas F1 Team|+31.189",
+        "9|Oliver Bearman|Haas F1 Team|+31.929",
+        "10|Carlos Sainz|Williams|+32.416",
+        "11|Nico Hülkenberg|Audi|+33.231",
+        "12|Liam Lawson|RB F1 Team|+34.013",
+        "13|Oscar Piastri|McLaren|+36.401",
+        "14|Sergio Pérez|Cadillac F1 Team|+41.400",
+        "15|Gabriel Bortoleto|Audi|+44.230",
+        "16|Valtteri Bottas|Cadillac F1 Team|Retired",
+        "17|Franco Colapinto|Alpine F1 Team|Retired",
+        "18|Pierre Gasly|Alpine F1 Team|Retired",
+        "19|Lando Norris|McLaren|Retired",
+        "20|Alexander Albon|Williams|Retired",
+        "21|Fernando Alonso|Aston Martin|Retired",
+        "22|Lance Stroll|Aston Martin|Retired"
+      ],
+      "overview": {
+        "fastestLap": {
+          "value": "1:44.916",
+          "label": "George Russell · Lap 49"
+        },
+        "fastestPitStop": {
+          "value": "15.093 sec",
+          "label": "bottas"
+        },
+        "raceDistance": {
+          "value": "51 laps",
           "label": "Classified winner laps"
         }
       },
